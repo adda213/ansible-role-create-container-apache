@@ -1,9 +1,9 @@
 ---
- - name: copy website file template
+- name: copy website file template
       template: 
         src: index.html.j2
         dest: /home/admin/index.html
- - name: Create Apache container
+- name: Create Apache container
      docker_container:
        name: webapp
        image: httpd
